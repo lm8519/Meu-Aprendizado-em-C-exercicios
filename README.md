@@ -1,4 +1,4 @@
-# Meu aprendizado em Cmeu-aprendizado-em-c
+# Meu aprendizado em C
 Este repositório documenta minha evolução na linguagem C durante a graduação em Análise e Desenvolvimento de Sistemas (ADS).
 
 # Objetivos
