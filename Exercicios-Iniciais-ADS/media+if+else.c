@@ -16,7 +16,15 @@ int main ()
 
     media = (valor1 + valor2 + valor3)/3;
 
-    printf("A media e: %d", media);
+    printf("A media e: %d \n", media);
+
+    if (media >= 6)
+    {
+        printf("Aprovado!\n");
+    
+    } else {
+        printf("Reprovado\n");
+    }
 
 return 0;
 }
