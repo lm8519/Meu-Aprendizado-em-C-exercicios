@@ -4,7 +4,7 @@
 int main ()
 {
     // Variáveis
-    int valor1, valor2, valor3, diferenca, quadrado;
+    int valor1, valor2, valor3, valor4, diferenca, quadrado;
 
     // Exercício diferença
     printf("Digite o primeiro numero:\n");
@@ -24,6 +24,17 @@ int main ()
     quadrado = valor3*valor3;
 
     printf("Valor de %d ao quadrado e: %d\n", valor3, quadrado);
+    
+    // Exercício Par ou Ímpar
 
-return 0;
+    printf("Digite um numero:\n");
+    scanf("%d", &valor4);
+
+    if (valor4 % 2 == 0) {
+        printf("Par\n");
+    } else {
+        printf("Impar\n");
+    }
+
+    return 0;
 }
