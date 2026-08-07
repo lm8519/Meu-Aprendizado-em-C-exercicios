@@ -26,7 +26,6 @@ int main ()
     printf("Valor de %d ao quadrado e: %d\n", valor3, quadrado);
     
     // Exercício Par ou Ímpar
-
     printf("Digite um numero:\n");
     scanf("%d", &valor4);
 

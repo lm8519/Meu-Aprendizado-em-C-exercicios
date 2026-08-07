@@ -18,7 +18,8 @@ Em breve este repositório será organizado por tópicos, como:
 - Matrizes
 - Funções
 - Ponteiros
-- Arquivos.
+- Arquivos
+- Entre outros.
 
 # Tecnologias
 - Linguagem C
@@ -27,14 +28,17 @@ Em breve este repositório será organizado por tópicos, como:
 - Visual Studio Code
 
 # Progresso
-- [ ] Configuração do repositório
-- [ ] Introdução à linguagem C
-- [ ] Variáveis
-- [ ] Operadores
+- [X] Configuração do repositório
+- [X] Introdução à linguagem C
+- [x] Comandos de Decisão
+- [x] Comandos de Entrada e Saída
+- [x] Variáveis
+- [x] Operadores
 - [ ] Estruturas condicionais
-- [ ] Estruturas de repetição
+- [x] Estruturas de repetição
 - [ ] Vetores
 - [ ] Matrizes
 - [ ] Funções
 - [ ] Ponteiros
 - [ ] Arquivos  
+- [ ] 
