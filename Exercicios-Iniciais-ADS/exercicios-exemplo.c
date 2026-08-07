@@ -4,7 +4,7 @@
 int main ()
 {
     // Variáveis
-    int valor1, valor2, valor3, valor4, diferenca, quadrado;
+    int valor1, valor2, valor3, valor4, valor5, valor6, diferenca, quadrado, media;
 
     // Exercício diferença
     printf("Digite o primeiro numero:\n");
@@ -25,7 +25,7 @@ int main ()
 
     printf("Valor de %d ao quadrado e: %d\n", valor3, quadrado);
     
-    // Exercício Par ou Ímpar
+    // Exercício Par ou Ímpar (IF or Else)
     printf("Digite um numero:\n");
     scanf("%d", &valor4);
 
@@ -34,6 +34,25 @@ int main ()
     } else {
         printf("Impar\n");
     }
+
+    // Exercício mais avançado IF or ELSE
+    printf("Digite sua primeira nota:\n");
+    scanf("%d", &valor5);
+
+    printf("Digite sua segunda nota:\n");
+    scanf("%d", &valor6);
+
+    media = (valor5 + valor6)/2;
+
+    if (media >= 9){
+        printf("Excelente\n");        
+    } else if (media >= 6) {
+        printf("Aprovado\n");
+    } else {
+        printf("Reprovado\n");
+    }
+    
+    printf("Sua media e: %d", media);
 
     return 0;
 }
