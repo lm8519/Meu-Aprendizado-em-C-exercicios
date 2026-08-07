@@ -3,7 +3,7 @@
 
 int main ()
 {
-    // Usando \n para quebras de linha e \t para tabulação
+    // Exercício exemplo usando \n para quebras de linha e \t para tabulação
     printf("Lista de Produtos: \n");
     printf("Produto\t\tPreco\t\tQuantidade\n");
     printf("---------------------------------------------------------\n");

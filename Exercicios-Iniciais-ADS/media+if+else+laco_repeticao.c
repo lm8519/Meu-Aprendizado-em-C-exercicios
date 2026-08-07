@@ -3,6 +3,7 @@
 
 int main ()
 {
+    // Exercício exemplo média+if+else+Laço de repetição
     int valor1, valor2, valor3, media;
 
 do {

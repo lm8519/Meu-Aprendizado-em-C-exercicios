@@ -3,6 +3,7 @@
 
 int main ()
 {
+    // Exercício exemplo média+if+else
     int valor1, valor2, valor3, media;
 
     printf("Digite o primeiro valor: \n", valor1);
