@@ -45,6 +45,32 @@ int main ()
  printf("Adultos: %d\n", adultos);
  printf("Idosos: %d\n", idosos);
 
+    // NOTA DE EVOLUÇÃO (Reflexão com a IA):
+    // O código original do professor fixava apenas 3 pessoas (idade1, idade2, idade3) o que não fez muita logica para mim, visto que foi pedido "1. Peça ao usuário para inserir a quantidade de pessoas"
+    // e duplicava os "ifs", violando o item 1 do enunciado. Junto com a IA, corrigi a lógica para usar um laço 'for' dinâmico, tornando o programa 
+    // aberto para ler qualquer quantidade de pessoas informada pelo usuário.
+
+    printf("Digite a quantidade de pessoas:\n");
+    scanf("%d", &qtdepessoas);
+
+    for (int i = 1; i <= qtdepessoas; i++)
+    {
+        printf("Digite a idade da pessoa %d:", i);
+        scanf("%d", &idade);
+
+        if (idade >= 0 && idade <= 17) {
+            jovens++;
+        } else if (idade >= 18 && idade <= 64) {
+            adultos++;
+        } else if (idade >= 65) {
+            idosos++;
+        }
+    }
+
+    printf("\nJovens: %d\n", jovens);
+    printf("Adultos: %d\n", adultos);
+    printf("Idosos: %d\n", idosos);
+
     
 return 0;
 }
