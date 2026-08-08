@@ -5,6 +5,7 @@ int main ()
 {
     // Variáveis
     int valor1, valor2, valor3, valor4, valor5, valor6, diferenca, quadrado, media;
+    char letra;
 
     // Exercício diferença
     printf("Digite o primeiro numero:\n");
@@ -52,7 +53,12 @@ int main ()
         printf("Reprovado\n");
     }
     
-    printf("Sua media e: %d", media);
+    printf("Sua media e: %d \n", media);
 
+    // Char
+    printf("Digite uma letra:\n");
+    scanf(" %c", &letra);
+
+    printf("Voce digitou a letra: %c", letra);
     return 0;
 }
