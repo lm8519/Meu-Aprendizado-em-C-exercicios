@@ -14,8 +14,10 @@ int main (void)
     char frase[10] = "Bom dia"; //Variável do tipo "frase" (uma quantidade maior de caracteres)
     double n3 = 1.23456; //Variável que possui casas decimais, porem comporta mais casas decimais do que o float (15) - real com precisão dupla
 
-    int valor1, valor2, soma, sub, mult, di;
+    int valor1, valor2, soma, sub, mult, di, numero, resto;
 
+    //Para não ficar aparecendo toda vez no código quando testar algo "novo" (permanece no arquivo, porem não é executada)
+/* 
     //Usos do comando printf com diversas variáveis
     printf("Hello World\n");
 
@@ -43,6 +45,14 @@ int main (void)
     printf("Valor da subtração de %d - %d = %d\n", valor1, valor2, sub);
     printf("Valor da multiplicação de %d * %d = %d\n", valor1, valor2, mult);
     printf("Valor da divisão de %d / %d = %d\n", valor1, valor2, di);
+*/ 
 
+    printf("Digite um número inteiro: ");
+    scanf("%d", &numero);
+
+    resto = numero % 2; //Ao inves do resultado da divisão, aparece o resto
+
+    printf("Resto da divisão: %d", resto);
+    
 return 0;
 }
