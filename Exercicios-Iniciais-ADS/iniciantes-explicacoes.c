@@ -13,7 +13,7 @@ int main (void)
     char letra = 'a'; //Variável do tipo caracter (uma unica letra)
     char frase[10] = "Bom dia"; //Variável do tipo "frase" (uma quantidade maior de caracteres)
     double n3 = 1.23456; //Variável que possui casas decimais, porem comporta mais casas decimais do que o float (15) - real com precisão dupla
-    int valor1, valor2, soma, sub, mult, di, numero, resto;
+    int valor1, valor2, soma, sub, mult, di, numero, resto, dia;
     float nota1, nota2, media;
 
     //Para não ficar aparecendo toda vez no código quando testar algo "novo" (permanece no arquivo, porem não é executada)
@@ -62,7 +62,7 @@ int main (void)
     {
         printf("Número ímpar!\n");
     }
-*/
+
 
 //Média com alteração de casas decimais
 printf("Digite a primeira nota:\n");
@@ -87,7 +87,43 @@ if ( media >= 6)
             {
                 printf("Aluno em recuperação.\n");
             }        
-        
+
+*/
+//Switch...Case
+
+printf("Digite um número de 1 a 7:");
+scanf("%d", &dia);
+
+switch (dia)
+{
+    case 1:
+        printf("Domingo\n");
+    break;
+    case 2:
+        printf("Segunda\n");
+    break;
+    case 3:
+        printf("Terça\n");
+    break;
+    case 4:
+        printf("Quarta\n");
+    break;
+    case 5:
+        printf("Quinta\n");
+    break;
+    case 6:
+        printf("Sexta\n");
+    break;
+    case 7:
+        printf("Sabádo\n");
+    break;
+
+    default:
+        printf("Valor inválido!\n");
+}
+
+//Diferença if / else de switch case - If else ficaria muito grande, então mais facil fazer switch case, pois fica mais limpo
+//Switch não trabalha com condicional (Case dia > 1)
 
 return 0;
 }
