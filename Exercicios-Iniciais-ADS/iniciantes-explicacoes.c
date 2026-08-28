@@ -13,8 +13,8 @@ int main (void)
     char letra = 'a'; //Variável do tipo caracter (uma unica letra)
     char frase[10] = "Bom dia"; //Variável do tipo "frase" (uma quantidade maior de caracteres)
     double n3 = 1.23456; //Variável que possui casas decimais, porem comporta mais casas decimais do que o float (15) - real com precisão dupla
-
     int valor1, valor2, soma, sub, mult, di, numero, resto;
+    float nota1, nota2, media;
 
     //Para não ficar aparecendo toda vez no código quando testar algo "novo" (permanece no arquivo, porem não é executada)
 /* 
@@ -45,14 +45,49 @@ int main (void)
     printf("Valor da subtração de %d - %d = %d\n", valor1, valor2, sub);
     printf("Valor da multiplicação de %d * %d = %d\n", valor1, valor2, mult);
     printf("Valor da divisão de %d / %d = %d\n", valor1, valor2, di);
-*/ 
+ 
 
-    printf("Digite um número inteiro: ");
+    printf("Digite um número inteiro:\n ");
     scanf("%d", &numero);
 
     resto = numero % 2; //Ao inves do resultado da divisão, aparece o resto
 
-    printf("Resto da divisão: %d", resto);
+    printf("Resto da divisão: %d\n", resto);
     
+    //If e else
+    if(resto == 0)
+    {
+        printf("Número par!\n");
+    } else
+    {
+        printf("Número ímpar!\n");
+    }
+*/
+
+//Média com alteração de casas decimais
+printf("Digite a primeira nota:\n");
+scanf("%f", &nota1);
+
+printf("Digite a segunda nota:\n");
+scanf("%f", &nota2);
+
+media = (nota1 + nota2)/2;
+
+printf("Media = %.2f\n", media); //Para dizer quantas casas decimais quer %.(numero de casas)f (exemplo %.2f)
+
+//if aninhado (if dentro de outro if) - quantidade imensa de if dentro de outro if
+if ( media >= 6)
+{
+    printf("Aluno aprovado :)\n");
+} else
+        if ( media < 3)
+        {
+            printf("Aluno reprovado :(\n");
+        } else
+            {
+                printf("Aluno em recuperação.\n");
+            }        
+        
+
 return 0;
 }
