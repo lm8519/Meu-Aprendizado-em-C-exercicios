@@ -4,6 +4,10 @@
 # include <stdlib.h>
 # include <locale.h>
 
+//Declarando constantes para as linhas e colunas da matriz
+#define LINHAS 2
+#define COLUNAS 2
+
 int main (void)
 {
     setlocale(LC_ALL, "pt_BR.UTF-8");
@@ -226,19 +230,18 @@ for( i = 0; i < 4; i++)
 {
     printf("v1[%d] = %.1f\n", i, v1[i]);
 }
-*/
 
 //****Matriz (Array bidimensional)*****
 //Declarando uma matriz
-int matriz[3][3], i, j; //Vetor é um caso especial de matriz, pode ter varias dimenções (nesse caso ela tem linhas e colunas)
+int matriz[LINHAS][COLUNAS], i, j; //Vetor é um caso especial de matriz, pode ter varias dimenções (nesse caso ela tem linhas e colunas)
 //i Contador de linhas //j Contador de colunas
 
 printf("\nDigite valor para a matriz\n\n");
 //Recebendo os valores da matriz
 
-for (i=0; i < 3; i++) //o índice j controla a linha
+for (i=0; i < LINHAS; i++) //o índice j controla a linha
 {
-    for (j=0; j < 3; j++) // o índice j controla a coluna
+    for (j=0; j < COLUNAS; j++) // o índice j controla a coluna
     {
         printf("\nElemento[%d][%d] = ", i, j);
         scanf("%d", &matriz [ i ] [ j ]);
@@ -247,12 +250,43 @@ for (i=0; i < 3; i++) //o índice j controla a linha
 
 printf("\n\n------------- Saída de Dados -------------\n\n");
 
-for (i = 0; i < 3; i++) //o índice i controla a linha
+for (i = 0; i < LINHAS; i++) //o índice i controla a linha
 {
-    for (j = 0; j < 3; j++) //o índice j controla a coluna
+    for (j = 0; j < COLUNAS; j++) //o índice j controla a coluna
     {
         printf("\nElemento[%d][%d] = %d\n", i, j, matriz[ i ][ j ]);
     }
 }
+
+//*** struct ***
+
+//Definindo o conteúdo da struct
+struct fichaAluno // é uma variável especial, dentro dela pode armazenar outras variáveis 
+{
+    int matricula;
+    float nota1;
+    float nota2;
+};
+//A struct sempre é la em cima nas variáveis, colocamos aqui para melhor visualização
+
+//Criando a variiável aluno que será do tipo struct fichaAluno
+struct  fichaAluno aluno; //aluno é uma variável do tipo fichaAluno
+
+printf("Número de matricula: ");
+scanf("%d", &aluno.matricula);
+
+printf("Informe a 1a. nota: ");
+scanf("%f", &aluno.nota1);
+
+printf("Informe a 2a. nota: ");
+scanf("%f", &aluno.nota2);
+
+printf("\n\n ---------- Lendo os dados da struct ----------\n\n");
+printf("Matricula: %d\n", aluno.matricula);
+printf("Nota da Prova 1: %.2f\n", aluno.nota1);
+printf("Nota da Prova 2: %.2f\n\n", aluno.nota2);
+*/
+
+//****** FUNÇÕES ****
 return 0;
 }
