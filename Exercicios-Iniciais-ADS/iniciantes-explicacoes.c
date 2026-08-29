@@ -173,18 +173,32 @@ for (cont = 1; cont <= 10; cont = cont + 2)  //Vai repetir tantas vezes ate quan
 {
     printf("%d - Boa tarde!\n", cont);
 }
-*/
 
 //Estrutura de repetição while
 
-cont = 1; //inicializando a variável de controle
+cont = 1 ; //inicializando a variável de controle
 
 //while (condição) repete enquanto a condição for verdadeira
-while (cont <= 5);
+while (cont <= 5)
 {
     printf("%d - Linguagem C \n", cont);
     cont++; //incremento da variável de controle
 }
+*/
+
+//Estrutura de repetição do while
+
+//Executa um comando primeiro e somente testa se a consição é verdadeira no final
+//Isto garante que o comando será executado no mínimo UMA VEZ
+
+cont = 1 ; //inicializando a variável de controle
+
+do 
+{
+    printf("%d - looping do...while \n", cont);
+    cont++; //Incremento da variável de controle
+}
+while (cont <= 10);
 
 return 0;
 }
