@@ -13,7 +13,7 @@ int main (void)
     char letra = 'a'; //Variável do tipo caracter (uma unica letra)
     char frase[10] = "Bom dia"; //Variável do tipo "frase" (uma quantidade maior de caracteres)
     double n3 = 1.23456; //Variável que possui casas decimais, porem comporta mais casas decimais do que o float (15) - real com precisão dupla
-    int valor1, valor2, soma, sub, mult, di, numero, resto, dia;
+    int valor1, valor2, soma, sub, mult, di, numero, resto, dia, cont;
     float nota1, nota2, media, freq;
 
     //Para não ficar aparecendo toda vez no código quando testar algo "novo" (permanece no arquivo, porem não é executada)
@@ -137,8 +137,6 @@ numero > 0 ? printf("Positivo\n") : printf("Negativo\n");
 
 // ":" (else)
 
-*/
-
 // Operadores lógicos (&&) (||)
 printf("Digite a frequência do aluno:\n");
 scanf("%f", &freq);
@@ -164,6 +162,29 @@ if ( media >= 6 && freq >= 75) //operador && (E) (As duas condições tem que se
             {
                 printf("Aluno em recuperação.\n");
             } 
+
+//Estrutura de repetição FOR
+for (cont = 1; cont <= 10; cont = cont + 1)  //Vai repetir tantas vezes ate quando for o limite (pode também ser cont++, para não ter que escrever tudo)
+{
+    printf("%d - Boa tarde!\n", cont);
+}
+
+for (cont = 1; cont <= 10; cont = cont + 2)  //Vai repetir tantas vezes ate quando for o limite (auterando a "soma")  
+{
+    printf("%d - Boa tarde!\n", cont);
+}
+*/
+
+//Estrutura de repetição while
+
+cont = 1; //inicializando a variável de controle
+
+//while (condição) repete enquanto a condição for verdadeira
+while (cont <= 5);
+{
+    printf("%d - Linguagem C \n", cont);
+    cont++; //incremento da variável de controle
+}
 
 return 0;
 }
