@@ -21,6 +21,8 @@ int multiplicar (int pn1, int pn2) //Multiplica recebe n1, n2 e retorna um int
     int res;
     res = pn1 * pn2;
     return(res); //Retornando o valor par main por estar fora da main (uma outra area de codigo), ai a função main vai chamar essa função quando precisar dela
+    //se quiser que a função não tenha retorno e colocar tipo "void"
+    //Vai retornar a variável "return(res)" sempre para quem chamar a função
 }
 
 int main (void) //função main
@@ -303,6 +305,21 @@ printf("Nota da Prova 2: %.2f\n\n", aluno.nota2);
 */
 
 //****** FUNÇÕES ****
+
+//Chamando a função
+int v1, v2, resultado; //Variável aqui para melhor visualização
+
+printf("Digite o primeiro valor:");
+scanf("%d", &v1);
+
+printf("Digite o segundo valor:");
+scanf("%d", &v2);
+
+//Chama a função e recebe o retorno
+resultado = multiplicar(v1, v2); //Multiplicar, nome da função la em cima
+//se não tivesse essa linha, a função não seria chamada
+
+printf("Resultado = %d\n\n", resultado);
 
 return 0;
 }
