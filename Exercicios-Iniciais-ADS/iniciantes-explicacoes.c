@@ -14,7 +14,7 @@ int main (void)
     char frase[10] = "Bom dia"; //Variável do tipo "frase" (uma quantidade maior de caracteres)
     double n3 = 1.23456; //Variável que possui casas decimais, porem comporta mais casas decimais do que o float (15) - real com precisão dupla
     int valor1, valor2, soma, sub, mult, di, numero, resto, dia;
-    float nota1, nota2, media;
+    float nota1, nota2, media, freq;
 
     //Para não ficar aparecendo toda vez no código quando testar algo "novo" (permanece no arquivo, porem não é executada)
 /* 
@@ -88,7 +88,6 @@ if ( media >= 6)
                 printf("Aluno em recuperação.\n");
             }        
 
-*/
 //Switch...Case
 
 printf("Digite um número de 1 a 7:");
@@ -123,7 +122,48 @@ switch (dia)
 }
 
 //Diferença if / else de switch case - If else ficaria muito grande, então mais facil fazer switch case, pois fica mais limpo
-//Switch não trabalha com condicional (Case dia > 1)
+//Switch não trabalha com condicional (Case dia > 1) (Valores fixos / constrantes)
+//If / else pode testar condicionais 
+
+//Linha
+
+//Operador ternário: pode ser mais curto que usar if / else em algumas ocasiões
+printf("Digite um número inteiro:\n");
+scanf("%d", &numero);
+
+//Condição a testar ? Verdadeiro : Falso
+
+numero > 0 ? printf("Positivo\n") : printf("Negativo\n");
+
+// ":" (else)
+
+*/
+
+// Operadores lógicos (&&) (||)
+printf("Digite a frequência do aluno:\n");
+scanf("%f", &freq);
+
+printf("Digite a primeira nota:\n");
+scanf("%f", &nota1);
+
+printf("Digite a segunda nota:\n");
+scanf("%f", &nota2);
+
+media = (nota1 + nota2)/2;
+
+printf("Media = %.2f\n", media); //Para dizer quantas casas decimais quer %.(numero de casas)f (exemplo %.2f)
+
+if ( media >= 6 && freq >= 75) //operador && (E) (As duas condições tem que ser verdadeira para que a condição seja verdadeira)
+{
+    printf("Aluno aprovado :)\n");
+} else
+        if ( media < 3 || freq < 75) //Operador || (Ou) (Uma ou outra tem que ser verdadeira para que a condição seja verdadeira)
+        {
+            printf("Aluno reprovado :(\n");
+        } else
+            {
+                printf("Aluno em recuperação.\n");
+            } 
 
 return 0;
 }
