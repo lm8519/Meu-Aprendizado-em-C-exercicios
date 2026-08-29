@@ -13,7 +13,7 @@ int main (void)
     char letra = 'a'; //Variável do tipo caracter (uma unica letra)
     char frase[10] = "Bom dia"; //Variável do tipo "frase" (uma quantidade maior de caracteres)
     double n3 = 1.23456; //Variável que possui casas decimais, porem comporta mais casas decimais do que o float (15) - real com precisão dupla
-    int valor1, valor2, soma, sub, mult, di, numero, resto, dia, cont;
+    int valor1, valor2, soma, sub, mult, di, numero, resto, dia, cont=100, resp;
     float nota1, nota2, media, freq;
 
     //Para não ficar aparecendo toda vez no código quando testar algo "novo" (permanece no arquivo, porem não é executada)
@@ -184,7 +184,6 @@ while (cont <= 5)
     printf("%d - Linguagem C \n", cont);
     cont++; //incremento da variável de controle
 }
-*/
 
 //Estrutura de repetição do while
 
@@ -200,7 +199,15 @@ do
 }
 while (cont <= 10);
 
-// Minuto 1:09:52
+*/
+
+//Outra opção dizendo para a pessoa digitar um número não ele pré estabelecido
+do 
+{
+    printf("Digite um valor positivo para repetir: \n");
+    scanf("%d", &resp);
+}
+while (resp > 0);
 
 return 0;
 }
