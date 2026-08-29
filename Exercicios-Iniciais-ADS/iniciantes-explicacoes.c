@@ -206,7 +206,6 @@ do
     scanf("%d", &resp);
 }
 while (resp > 0);
-*/
 
 //***VATOR (ARRAY)***
 //Declarando e inicializando o vetor V1 (Pode colocar no inicio junto com as demais, so colocou aqui para ficar facil visualização)
@@ -227,6 +226,33 @@ for( i = 0; i < 4; i++)
 {
     printf("v1[%d] = %.1f\n", i, v1[i]);
 }
+*/
 
+//****Matriz (Array bidimensional)*****
+//Declarando uma matriz
+int matriz[3][3], i, j; //Vetor é um caso especial de matriz, pode ter varias dimenções (nesse caso ela tem linhas e colunas)
+//i Contador de linhas //j Contador de colunas
+
+printf("\nDigite valor para a matriz\n\n");
+//Recebendo os valores da matriz
+
+for (i=0; i < 3; i++) //o índice j controla a linha
+{
+    for (j=0; j < 3; j++) // o índice j controla a coluna
+    {
+        printf("\nElemento[%d][%d] = ", i, j);
+        scanf("%d", &matriz [ i ] [ j ]);
+    }
+}
+
+printf("\n\n------------- Saída de Dados -------------\n\n");
+
+for (i = 0; i < 3; i++) //o índice i controla a linha
+{
+    for (j = 0; j < 3; j++) //o índice j controla a coluna
+    {
+        printf("\nElemento[%d][%d] = %d\n", i, j, matriz[ i ][ j ]);
+    }
+}
 return 0;
 }
