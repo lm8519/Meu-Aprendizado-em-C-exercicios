@@ -8,7 +8,22 @@
 #define LINHAS 2
 #define COLUNAS 2
 
-int main (void)
+/*Esqueleto de uma função
+tipo_de_retorno nome_funcao(parametros) // Sempre vai ter um tipo, nome e pode ser que tenha
+{
+    comandos...
+}
+*/
+
+//Função Multiplicar
+int multiplicar (int pn1, int pn2) //Multiplica recebe n1, n2 e retorna um int
+{
+    int res;
+    res = pn1 * pn2;
+    return(res); //Retornando o valor par main por estar fora da main (uma outra area de codigo), ai a função main vai chamar essa função quando precisar dela
+}
+
+int main (void) //função main
 {
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
@@ -288,5 +303,6 @@ printf("Nota da Prova 2: %.2f\n\n", aluno.nota2);
 */
 
 //****** FUNÇÕES ****
+
 return 0;
 }
