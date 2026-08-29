@@ -199,8 +199,6 @@ do
 }
 while (cont <= 10);
 
-*/
-
 //Outra opção dizendo para a pessoa digitar um número não ele pré estabelecido
 do 
 {
@@ -208,6 +206,27 @@ do
     scanf("%d", &resp);
 }
 while (resp > 0);
+*/
+
+//***VATOR (ARRAY)***
+//Declarando e inicializando o vetor V1 (Pode colocar no inicio junto com as demais, so colocou aqui para ficar facil visualização)
+float v1[4] = {7.1, 8.4, 9.5, 5.2}; // O que é um Vetor (Array)? É uma varíavel que tem multiplas posições de armazenamento (Nesse exemplo Float chamada v1 que tem 4 posições de armazenamento)
+
+//{7.1, 8.4, 9.5, 5.2} indices do vetor
+
+printf("Exibindo os Valores do Vator \n\n");
+printf("v1[0] = %.1f\n", v1 [0]); //Primeiro indice não é o 1, é o 0
+printf("v1[1] = %.1f\n", v1 [1]);
+printf("v1[2] = %.1f\n", v1 [2]);
+printf("v1[3] = %.1f\n", v1 [3]);
+
+//Vetor (Array) com estrutura de repetição 
+int i; //contador para índices do vetor
+
+for( i = 0; i < 4; i++)
+{
+    printf("v1[%d] = %.1f\n", i, v1[i]);
+}
 
 return 0;
 }
