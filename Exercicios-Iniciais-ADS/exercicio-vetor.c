@@ -1,0 +1,29 @@
+# include <stdio.h>
+# include <stdlib.h>
+# include <locale.h>
+
+int main ()
+{
+    setlocale(LC_ALL, "pt_BR.UTF-8");
+
+    int v[20];
+    int i;
+
+    // Digitar os 20 números
+    for (i = 0; i < 20; i++)
+    {
+        printf("Digite o %dº número inteiro: \n", i + 1);
+        scanf("%d", &v[i]);
+    }
+    
+    // Mostrar os 20 números
+    for (i = 0; i < 20; i++)
+    {
+        printf("O %dº inteiro é: %d \n", i + 1, v[i]);
+    }
+    
+    
+    
+
+return 0;
+}
