@@ -20,6 +20,7 @@ int main ()
 
     // Imprime o resultado
     printf("A soma de %d e %d é %d\n", numero1, numero2, resultado);
-    
+
 return 0;
 }
+    
