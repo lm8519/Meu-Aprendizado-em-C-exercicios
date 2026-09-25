@@ -6,6 +6,8 @@ int main ()
 {
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
+    /*
+    // Como o professor passou
     int numero_secreto, chute;
 
     // Pede para pessoa inserir o número secreto
@@ -26,6 +28,10 @@ int main ()
     } else {
         printf("Você errou! O número secreto era %d. \n", numero_secreto);
     }
+    */
 
+    // Ele pediu para melhorar para uma versão que informe se o número esta "próximo" ou "distante" do número secreto - Baseado na diferença entre o chute e o número secreto - cheguei a conclusão que era bom usar um laço de repetição, caso ele erre, diz que errou e quão proximo esta, e se acertar ele ficaliza e diz parabens, porem falta algo, como chegar na diferença usando o chute como "parametro" - Olhei o exercício dela para fazer:
+      
+    
 return 0;
 }
