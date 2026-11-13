@@ -84,11 +84,9 @@ int main () {
 
         printf("Conteudo apontado por p2: %i\n",*p2);
         printf("Endereco em p2: %p\n",p2);
-
-        */
+    
 
         // Exemplo de mudança de conteúdo usando o ponteiro
-
     void main () {
         int a=3,b=1,c=2, *p1=NULL,*p2=NULL;
         p1=&a;
@@ -107,4 +105,46 @@ int main () {
 
         printf("Conteudo apontado por p2: %i\n",*p2);
         printf("Endereco em p2: %p\n",p2);
+
 }
+        
+       // Exemplo de ponteiros de outros tipos
+       void main () {
+        int a=3, *p_int; // Ponteiro chamado int
+        float b=2.8,*p_float; // Ponteiro chamado float
+        char c='a',*p_char; // Ponteiro chamado char
+        double d=4.9,*p_double; // // Ponteiro chamado double
+
+        // Atribuição dos endereços das respectivas variaveis
+        p_int=&a;
+        p_float=&b;
+        p_char=&c;
+        p_double=&d;
+
+        printf("Conteudo apontado por p_int: %i\n",*p_int);
+        printf("Endereco em p_int: %p\n",p_int);
+
+        printf("Conteudo apontado por p_float: %f\n",*p_float);
+        printf("Endereco em p_float: %p\n",p_float);
+
+        printf("Conteudo apontado por p_char: %c\n",*p_char);
+        printf("Endereco em p_char: %p\n",p_char);
+
+        printf("Conteudo apontado por p_double: %lf\n",*p_double);
+        printf("Endereco em p_double: %p\n",p_double);
+
+        */
+
+        // Exercicio analise o código abaixo em linguagem C:
+
+        void main () {
+            int x, y=0, *p;
+            p = &y;
+            x = *p + 4; // Resulta em y = 4, porem é descartado
+            x = 3; // Vale esse resultado 2 (com o x--)
+            x--;
+
+            *p = x+y; // Então x = 2 e y = 0
+
+            printf("%i %i\n",x,y);
+       }
