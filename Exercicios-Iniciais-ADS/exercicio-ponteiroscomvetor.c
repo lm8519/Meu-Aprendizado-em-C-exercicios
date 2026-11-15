@@ -2,6 +2,8 @@
 # include <stdlib.h>
 # include <locale.h>
 
+/*
+// Exercicio Declaração vetor com ponteiro
 void main ()
 {
     setlocale(LC_ALL, "pt_BR.UTF-8");
@@ -21,3 +23,14 @@ void main ()
     printf("Valor de vet[2]: %d\n", vet[2]);
     printf("Valor de *ptr: %d\n", *ptr);
 }
+
+// Exemplo função sizeof
+
+void main (){
+    printf("int: %i\n", sizeof(int));
+    printf("float: %i\n", sizeof(float));
+    printf("char: %i\n", sizeof(char));
+    printf("double: %i\n", sizeof(double));
+    printf("int*: %i\n", sizeof(int*));
+}
+*/
