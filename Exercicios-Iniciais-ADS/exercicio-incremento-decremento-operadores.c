@@ -33,6 +33,10 @@ void main ()
     char *p_a=&a, *p_b=&b;
     if(p_a>p_b) {
         printf("p_a > p_b\n %p > %p\n", p_a,p_b);
+    }else{
+        printf("p_b > p_a\n %p > %p\n",p_b,p_a);
+    }
+    printf("Diferença: %p\n", p_a-p_b);
     */
 
     double vet[5]={1.2,5.4,8.9,2.3,0.7};
